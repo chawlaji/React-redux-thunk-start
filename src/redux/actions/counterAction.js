@@ -3,20 +3,20 @@ import { COUNTER_DICREMENT, COUNTER_INCREMENT,RESET_COUNTER } from '../../consta
 export default (payload) => {
    return dispatch => {
         if (payload === 1) {
-            setTimeout(() => {
+           
                 // Yay! Can invoke sync or async actions with `dispatch`
                 dispatch(increment());
-              }, 1000);
+             
         } else if (payload === 2){
-            setTimeout(() => {
+           
                 // Yay! Can invoke sync or async actions with `dispatch`
                 dispatch(dicrement());
-              }, 1000);
+             
         }else {
-            setTimeout(() => {
+           
                 // Yay! Can invoke sync or async actions with `dispatch`
                 dispatch(reset());
-              }, 1000);
+            
         }
     }
 };

@@ -8,9 +8,9 @@ import Counter3 from './components/Counter/CounterDIrectActionDispatch';
 function App() {
   return (
     <div className="App">
-      {/* <Counter3/> 
-    <Counter2/>  */}
-     <Counter1/>  
+      <Counter3/> 
+    <Counter2/> 
+     {/* <Counter1/>   */}
     </div>
   );
 }
