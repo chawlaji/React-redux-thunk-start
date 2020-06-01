@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import {increment,dicrement,reset} from '../../redux/actions/counterAction';
 import { bindActionCreators } from 'redux';
-import "../../styles/Counter.scss";
+import  "./Counter.scss";
 class CounterMultipleActionCalls extends React.Component {
   
   render() {

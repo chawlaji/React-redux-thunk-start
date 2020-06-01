@@ -21,17 +21,23 @@ componentDidUpdate(prevProps, prevState) {
       <div>
         <h2>Counter</h2>
         <div>
-          <button onClick={this.onCounterClick(1)}>-</button>
+          <button onClick={this.dicrement}>-</button>
           <span>{this.props.count}</span>
-          <button onClick={this.onCounterClick(2)}>+</button>
+          <button onClick={this.increment}>+</button>
         </div>
-        <button onClick={this.onCounterClick(0)}>reset</button>
+        <button onClick={this.reset}>reset</button>
       </div>
     )
   }
 
-  onCounterClick =(val) =>{
-    this.props.counterAction(val)
+  dicrement = () =>{
+    this.props.counterAction(2)
+  }
+  increment =() =>{
+    this.props.counterAction(1)
+  }
+  reset =() =>{
+    this.props.counterAction(0)
   }
 }
 

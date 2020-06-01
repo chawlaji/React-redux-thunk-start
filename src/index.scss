@@ -3,7 +3,14 @@
 
 body {
   @include theme-aware('background', 'color-background');
+  @include theme-aware('color', 'color-card');
 }
+
+
+// .outer-div {
+//   @include theme-aware('background', 'color-background');
+//   @include theme-aware('color', 'color-card');
+// }
 
 // It will generate the following rules:
 // body {

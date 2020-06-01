@@ -12,7 +12,7 @@ function App() {
       <div class="content">
         {/* <Counter3/>  */}
         <Counter2 />
-        {/* <Counter1/>   */}
+        <Counter1/>
       </div>
       <div className="footer"></div>
     </div>

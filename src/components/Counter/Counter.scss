@@ -1,16 +1,14 @@
-$bgcolor: lightblue;
-$textcolor: darkblue;
-$fontsize: 18px;
+@import "../../styles/1.scss";
 
 /* Use the variables */
 .outer-div {
   background-color: $bgcolor;
   color: $textcolor;
-  font-size: $fontsize;
+  font-size: 18px;
 }
 
 .inner-div {
     background-color: $textcolor;
     color: $bgcolor;
-    font-size: $fontsize;
+    font-size: 18px;
   }
