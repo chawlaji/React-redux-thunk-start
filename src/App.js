@@ -7,10 +7,14 @@ import Counter3 from './components/Counter/CounterDIrectActionDispatch';
 
 function App() {
   return (
-    <div className="App">
-      <Counter3/> 
-    <Counter2/> 
-     {/* <Counter1/>   */}
+    <div className="container">
+      <div className="header"></div>
+      <div class="content">
+        {/* <Counter3/>  */}
+        <Counter2 />
+        {/* <Counter1/>   */}
+      </div>
+      <div className="footer"></div>
     </div>
   );
 }

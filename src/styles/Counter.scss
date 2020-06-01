@@ -1,0 +1,16 @@
+$bgcolor: lightblue;
+$textcolor: darkblue;
+$fontsize: 18px;
+
+/* Use the variables */
+.outer-div {
+  background-color: $bgcolor;
+  color: $textcolor;
+  font-size: $fontsize;
+}
+
+.inner-div {
+    background-color: $textcolor;
+    color: $bgcolor;
+    font-size: $fontsize;
+  }
