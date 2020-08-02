@@ -1,15 +1,14 @@
 import { LOGIN_FAILURE,LOGIN_SUCCESS } from '../../constants/constants';
-import { userService } from '../services/user.service';
+import { authenticateServicel } from '../../Services/authenticateService';
 
 export const userActions = {
     login,
     logout
 };
 
-function login(username, password, grant_type) {
+login = (username, password) => {
     return dispatch => {
-
-        userService.login(username, password, grant_type)
+        userService.login(username, password)
             .then(
                 user => { 
                     dispatch(success(user));
@@ -29,8 +28,8 @@ function login(username, password, grant_type) {
             );
     };
 
-    function success(user) { return { type: userConstants.LOGIN_SUCCESS, user } }
-    function failure(error) { return { type: userConstants.LOGIN_FAILURE, error } }
+     success =(user) => { return { type: userConstants.LOGIN_SUCCESS, user } }
+     failure =(error) => { return { type: userConstants.LOGIN_FAILURE, error } }
 }
 
 function logout() {
